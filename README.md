@@ -28,3 +28,26 @@ This project applies data cleaning techniques to a fictional sales dataset using
    - Generates a boxplot to visualize the `Unit Price` distribution after cleaning.
 8. **Save Results**:
    - Saves the cleaned dataset to `sales_data_cleaned.csv`.
+
+## How to Run
+1. Clone this repository to your local machine.
+2. Ensure Python 3.x is installed and the required libraries are installed.
+3. Save the script as `clean_sales_data.py` in your chosen directory.
+4. Update the file paths in `clean_sales_data.py` if needed to match your system.
+5. Run the script:
+   ```bash
+   python clean_sales_data.py
+6. Verify output files (sales_data_raw.csv, sales_data_cleaned.csv, and unit_price_distribution.png) are generated in your directory.
+   
+## Visualizations
+
+## Static Boxplot (unit_price_distribution.png): 
+A Matplotlib boxplot showing the distribution of Unit Price after cleaning, highlighting the removal of outliers.
+
+## Observations and Analyses
+The sales_data_raw.csv contains synthetic sales data for May 2025, with intentional issues like missing values, duplicates, and an outlier (e.g., $1000 Unit Price).
+After cleaning, sales_data_cleaned.csv reflects a dataset with consistent Region values ("SP", "RJ", "MG") and no outliers beyond the IQR range.
+The boxplot confirms the removal of extreme values, ensuring data quality for further analysis.
+
+## License
+This content, including the script, documentation, and generated files, is the intellectual property of its creator. Unauthorized use, reproduction, or distribution of this content without prior written permission is strictly prohibited. Please contact renatofraga.rr@gmail.com for inquiries.
